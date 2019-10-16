@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="books-list"></ion-back-button>
+    
+        </ion-buttons>
+        <ion-button slot ="end" (click)="delet()">
+            <ion-icon slot ="start" name ="close"></ion-icon>
+            Delete
+          </ion-button >
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    
+    <ion-card>
+        <img src="https://timedotcom.files.wordpress.com/2015/06/521811839-copy.jpg" height="250px" />
+        <ion-card-header>
+          <ion-card-title>{{singleBook?.name}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          {{singleBook?.author}}
+        </ion-card-content>
+    
+    
+      </ion-card>
+
+</ion-content>
